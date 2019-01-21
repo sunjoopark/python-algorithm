@@ -36,9 +36,9 @@ def delete_node(del_data):
     #print(node_A.data)
     pre_node = node_A
     next_node = pre_node.next
-    next_next_node = next_node.next
+    next_next_node = next_node.next ##필요없는부분
     if pre_node.data == del_data:
-        node1 = next_node
+        node1 = next_node ### node A
         del pre_node
         return
 
@@ -71,5 +71,5 @@ if __name__ == '__main__':
     insert_node("C")
     print_list()
     print("노드 D의 삭제 후")
-    delete_node("D")
+    delete_node("D") ## "E"를 지울 
     print_list()
